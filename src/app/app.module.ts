@@ -7,12 +7,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 // local lib
 import {AppComponent} from './app.component';
 import {TopNavComponent} from './top-nav/top-nav.component';
+import { SideLeftNavComponent } from './side-left-nav/side-left-nav.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
+    SideLeftNavComponent,
   ],
   imports: [
     BrowserModule,

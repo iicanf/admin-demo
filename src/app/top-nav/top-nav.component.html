@@ -1,19 +1,9 @@
 <div class="example-container">
   <mat-toolbar color="primary">
-    <button mat-icon-button (click)="snav.toggle()">
+    <button mat-icon-button (click)="toggleSideNavOpened()">
       <mat-icon>menu</mat-icon>
     </button>
     <span>My Application</span>
   </mat-toolbar>
 </div>
-<mat-sidenav-container [class]="mobileQuery.matches ? 'example-sidenav-container-no-header':'example-sidenav-container'"
-                       [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-  <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
-               [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
-    some text some text some text some text
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <h1>content</h1>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<app-side-left-nav [selfOpened]="sideNavOpened"></app-side-left-nav>

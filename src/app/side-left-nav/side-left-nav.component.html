@@ -1,0 +1,11 @@
+<mat-sidenav-container
+  [class]="mobileQuery.matches ? 'example-sidenav-container-no-header':'example-sidenav-container'">
+  <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [(opened)]="selfOpened"
+               [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+    some text some text some text some text
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <h1>content</h1>
+  </mat-sidenav-content>
+</mat-sidenav-container>
